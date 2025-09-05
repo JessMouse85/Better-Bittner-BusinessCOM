@@ -329,7 +329,7 @@
 
 .mainContent {
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
     border: 2px solid navy;
     overflow: hidden;
     border-radius: 20px;

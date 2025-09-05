@@ -5,6 +5,13 @@
     document.getElementById('quickHelpBar').style.position = 'absolute';
   });
 
+  document.getElementById('setItUpButton').addEventListener('click', function () {
+    document.getElementById('onboardingForm').style.visibility = 'visible';
+  });
+
+  document.getElementById('formClose').addEventListener('click', function () {
+    document.getElementById('onboardingForm').style.visibility = 'hidden';
+  });
   // // Technology Consulting Services Click Even Handlers
   // document.getElementById('technologyConsulting').addEventListener('click', function () {
   //   window.location.href = './ITConsulting.html';

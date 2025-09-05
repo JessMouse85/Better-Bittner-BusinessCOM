@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Developoment Consulting</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../common.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <!-- Dismissable bar with quick action items -->
+        <div class="quickHelpBar" id="quickHelpBar">
+            <ul>
+                <li><p>Market Impact From [item]</p></li>
+                <li><a href="#documentation">Current Info</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+            </ul>
+            <!-- Closes quickHelpBar -->
+            <button id="newsBumperClose" class="closeMe" aria-label="Close notification">✕</button>
+        </div>
+        <!-- Main Site Navigation -->
+        <nav id="mainNav">
+            <ul id="navList">
+                <li><a href="./index.html"><img id="logo" src="../media/Logo Round.jpg" alt="Better Bittner Business Logo"></a></li>
+                <li><a href="./consulting.html">Consulting</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="lastMultiColumn"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="serviceWriteup">
+        <div id="setItUpButton"><p class="emailFormButton">Set It Up!</p></div>
+        <div class="adSpace"><img src="../media/ad.jpg" alt="Advertisement for McKinnley's Treated Lumber"><a class="learnMore" href="#null">Try McKinnley's!</a></div>
+        <section class="mainContent">
+            <h1>Web Development Consulting</h1>
+            <div class="serviceDetails">
+                <div class="detailedServiceDescription">
+                    <p>In the ever-evolving digital landscape, a professional web development consultation service stands as a cornerstone for businesses and individuals aiming to establish a robust online presence. Our premier consultation service is designed to empower clients with tailored strategies, cutting-edge technologies, and expert guidance to create websites that not only captivate but also convert. Whether you’re a startup seeking a sleek, user-friendly platform or an established enterprise looking to revamp your digital footprint, our team of seasoned professionals is committed to delivering solutions that align seamlessly with your goals.</p>
+                    <p>At the heart of our web development consultation service is a deep understanding of the modern web ecosystem. We begin by immersing ourselves in your vision, analyzing your business objectives, target audience, and industry trends. This collaborative approach ensures that every recommendation we provide—be it on design aesthetics, functionality, or performance optimization—is customized to resonate with your brand’s unique identity. Our consultants bring a wealth of expertise across various domains, including front-end and back-end development, user experience (UX) design, and search engine optimization (SEO), ensuring a holistic strategy that drives measurable results.</p>
+                    <p>Our service goes beyond mere technical advice. We prioritize clear communication, breaking down complex concepts into actionable insights, so you feel confident and informed at every step. From selecting the right content management system (CMS) like WordPress or Drupal to advising on responsive design for seamless mobile experiences, we cover every facet of web development. We also stay ahead of the curve by integrating the latest trends, such as progressive web apps, accessibility standards, and performance-enhancing techniques, to ensure your website remains competitive in a fast-paced digital world.</p>
+                    <p>Scalability and adaptability are key pillars of our consultation process. We understand that a website must evolve with your business, so we provide strategic roadmaps for future enhancements, whether it’s integrating e-commerce capabilities, incorporating advanced analytics, or optimizing for higher search engine rankings. Security is another critical focus, with our team advising on best practices to safeguard your site against vulnerabilities, ensuring both user trust and data integrity.</p>
+                    <p>What sets our web development consultation service apart is our commitment to long-term partnerships. We don’t just deliver recommendations and walk away; we offer ongoing support to refine and elevate your digital presence. By leveraging tools like HTML, CSS, JavaScript, and modern frameworks, we guide you toward solutions that are both visually stunning and technically sound. Our consultations also emphasize user-centric design, ensuring intuitive navigation and engaging interfaces that keep visitors coming back.</p>
+                    <p>In a world where first impressions are often digital, our web development consultation service is your gateway to standing out. We blend creativity with technical precision, delivering websites that are not only functional but also memorable. Let us help you navigate the complexities of web development with confidence, transforming your ideas into a dynamic online experience that drives growth and fosters connection. Partner with us today to unlock the full potential of your digital vision.</p>
+                </div>
+            </div>
+        </section>
+        <div id="onboardingForm">
+            <h2>Request a Consultation</h2>
+            <form action="mailto:gromtharstrongheart@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="learnMore" type="submit">Send Consultation Request</button>
+            </form>
+            <p id="formClose">Close</p>
+        </div>
+    </section>
 </body>
 </html>

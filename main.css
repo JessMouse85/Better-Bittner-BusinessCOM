@@ -210,7 +210,7 @@
     display: flex;
     flex-direction: column;
     border: 2px solid navy;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .servicesGrid li h2{
@@ -218,7 +218,7 @@
     align-content: center;
     font-family: sans-serif;
     text-align: center;
-    background-color: navy;
+    background: linear-gradient(128deg, navy, blue);
     color: white;
     font-size: 2rem;
     border-bottom-left-radius: 0;
@@ -233,6 +233,79 @@
     padding: 0.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
+}
+.serviceWriteup {
+    display: flex;
+}
+.adSpace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    max-height: 640px;
+    padding: 1rem;
+    border: 2px solid navy;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    text-align: center;
+}
+.adSpace a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.adSpace img {
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+}
+
+#setItUpButton {
+    position: fixed;
+    height: auto;
+    width: auto;
+    left: 30%;
+    padding: 12px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    border: 5px solid black;
+    border-radius: 10%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.emailFormButton {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#onboardingForm {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detailedServiceDescription {
+    margin: 0 auto;
+    background-color: white;
+    width: 85%;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.detailedServiceDescription p {
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .learnMore {
@@ -254,8 +327,92 @@
     transform: scale(1.05);
 }
 
+.mainContent {
+    margin: 0 auto;
+    width: 60%;
+    border: 2px solid navy;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
 
+.mainContent h1 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.serviceDetails {
+    background-image: url('./media/code.png');
+}
+
+#onboardingForm{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    margin: 1rem auto;
+    max-height: 580px;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+#onboardingForm h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+#onboardingForm form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+}
+
+#onboardingForm label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+#onboardingForm input, #onboardingForm textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#formClose {
+    background: linear-gradient(45deg, pink, white);
+    align-self: center;
+    margin-top: 8px;
+    font-family: sans-serif;
+    position: relative;
+    padding: 12px 16px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
 /* Responsive Web Design */
+@media (max-width: 1400px) {
+
+    .servicesGrid li h2{
+        font-size: 1.5rem;
+    }
+}
 
 @media (max-width: 1130px){
     #navList li a {
@@ -324,3 +481,5 @@
         z-index: -1; ;
     }
 }
+
+/* next break point is 500px */

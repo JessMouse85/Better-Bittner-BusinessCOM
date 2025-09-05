@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 .closeMe {
     background: linear-gradient(45deg, pink, white);
@@ -38,9 +39,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
-/* .quickHelpBar .dismissX {
-    cursor: pointer;
-} */
 
 .quickHelpBar p a {
     align-content: center;
@@ -54,28 +52,29 @@
 }
 #navList {
     align-items: center;
-    height: 96px;
+    height: auto;
+    width: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0;
 }
 #navList li {
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
     color: whitesmoke;
     list-style: none;
-    margin: 0 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    transition: 0.3s ease;
 }
 #navList li a {
-    transform: scale(1);
-    font-size: 36px;
+    /* transform: scale(1); */
+    text-align: center;
+    font-size: 2.25rem;
     font-weight: 700;
     text-decoration: none;
     color: inherit;
-}
-
-#navList li {
-    transition: 0.3s ease;
 }
 
 #navList li:hover {
@@ -97,6 +96,7 @@
 }
 
 #logo {
+    position: relative;
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
@@ -104,7 +104,7 @@
 }
 
 .sectionBanner {
-    height: 300px;
+    height: fit-content;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
     display: flex;
@@ -113,6 +113,8 @@
     color: white;
 }
 .sectionBanner img {
+    width: auto;
+    height:auto;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
     overflow: hidden;
@@ -120,11 +122,13 @@
 }
 
 .sectionInfoBox {
-    margin: 0 auto;
+    margin:auto;
     width: 60%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -136,14 +140,24 @@
 }
 
 .sectionInfoBox p {
-    font-size: 1.2rem;
+
+    font-size: 2rem;
     line-height: 1.6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: center;
+}
+
+#consultingImage {
+    width: auto;
+    height: auto;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    overflow: hidden;
+    border-right: 4px solid white;
 }
 
 #newsGrid {
+    overflow: hidden;
     width: 60%;
     list-style: none;
     display: grid;
@@ -153,6 +167,11 @@
     padding: 1rem;
 }
 
+#newsGrid li{
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid navy;
+}
 #newsGrid li h2{
     height: 4rem;
     align-content: center;
@@ -161,9 +180,7 @@
     background-color: navy;
     color: white;
     font-size: 2rem;
-    border-radius: 10%;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    overflow: hidden;
 }
 
 #newsGrid li p{
@@ -172,7 +189,13 @@
     font-size: 1.5rem;
     text-align: justify;
     text-justify: inter-word;
-    border: 2px solid navy;
+}
+
+.newsItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .servicesGrid{
@@ -229,4 +252,75 @@
     color: navy;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
     transform: scale(1.05);
+}
+
+
+/* Responsive Web Design */
+
+@media (max-width: 1130px){
+    #navList li a {
+        font-size: 1.75rem;
+    }
+    #newsTitle {
+        font-size: 2rem;
+    }
+    #newsGrid li h2{
+        font-size: 1.5rem;
+    }
+    #newsGrid li p{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .sectionInfoBox h1 {
+        font-size: 2rem;
+    }
+    .sectionInfoBox p {
+        font-size: 1.5rem;
+    }
+    #navList li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 760px) {
+    #navList {
+        padding: 8px;
+        display: grid;
+        gap: 8px;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    /* .lastMultiColumn {
+        grid-column: span 2;
+        justify-self: center;
+    } */
+
+    #logo {
+        grid-row: span 3;
+        margin: auto;
+    }
+
+    .sectionBanner img{
+        display: none;
+    }
+
+    .sectionBanner {
+        border-radius: 0;
+    }
+    .sectionInfoBox {
+        background-color: navy;
+    }
+    #newsGrid {
+        width: 90%;
+        grid-template: repeat(auto-fit, minmax(200px, 1fr)) / 1fr;
+    }
+    #welcomeBanner {
+        background-image: url('./media/Consulting.png');
+        background-size: cover;
+        background-position: center;
+        z-index: -1; ;
+    }
 }

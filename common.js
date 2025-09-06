@@ -12,6 +12,58 @@
   document.getElementById('formClose').addEventListener('click', function () {
     document.getElementById('onboardingForm').style.visibility = 'hidden';
   });
+
+  document.getElementById('adClose').addEventListener('click', function () {
+    Array.from(document.getElementsByClassName('adSpace')).forEach(function (element) {
+      element.style.visibility = 'hidden';
+      element.style.position = 'absolute';
+    
+    });
+    document.getElementById('setItUpButton').style.left = '8px';
+  });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   // // Technology Consulting Services Click Even Handlers
   // document.getElementById('technologyConsulting').addEventListener('click', function () {
   //   window.location.href = './ITConsulting.html';

@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Developoment Consulting</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../common.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <!-- Dismissable bar with quick action items -->
+        <div class="quickHelpBar" id="quickHelpBar">
+            <ul>
+                <li><p>Market Impact From [item]</p></li>
+                <li><a href="#documentation">Current Info</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+            </ul>
+            <!-- Closes quickHelpBar -->
+            <button id="newsBumperClose" class="closeMe" aria-label="Close notification">✕</button>
+        </div>
+        <!-- Main Site Navigation -->
+        <nav id="mainNav">
+            <ul id="navList">
+                <li><a href="../index.html"><img id="logo" src="../media/Logo Round.jpg" alt="Better Bittner Business Logo"></a></li>
+                <li><a href="../consulting.html">Consulting</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="lastMultiColumn"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="serviceWriteup">
+        <div id="setItUpButton"><p class="emailFormButton">Set It Up!</p></div>
+        <div class="adSpace"><img src="../media/ad.jpg" alt="Advertisement for McKinnley's Treated Lumber"><a class="learnMore" href="#null">Try McKinnley's!</a><p id="adClose">Dismiss</p></div>
+        <section id="pitchSection" class="mainContent">
+            <h1>Web Development Consulting</h1>
+            <div class="serviceDetails">
+                <div class="detailedServiceDescription">
+                    <p>Our UX/UI Design Consultation Service is crafted to help businesses and entrepreneurs create intuitive, engaging, and visually appealing digital experiences. Whether you're developing a new website, mobile app, or software interface, our expert consultants provide tailored strategies to enhance user satisfaction and drive business success. We simplify the complexities of user experience (UX) and user interface (UI) design, delivering actionable guidance to ensure your product is user-friendly, aesthetically compelling, and aligned with your brand’s goals.</p>
+
+                    <p>We start with a comprehensive analysis of your project’s objectives and target audience. Our consultants assess your current digital presence, user needs, and business goals to create a customized UX/UI design plan. We focus on understanding your users’ behaviors, preferences, and pain points through research methods like user personas and journey mapping. This ensures your design prioritizes usability, accessibility, and engagement while reflecting your brand’s identity and vision.</p>
+
+                    <p>Our consultation process is collaborative and hands-on, guiding you through every stage of UX/UI design. We provide expert advice on wireframing, prototyping, and creating intuitive navigation flows to enhance user satisfaction. Our team also covers UI essentials like color schemes, typography, and responsive design to ensure a polished, professional look across devices. We use industry-standard tools and best practices to help you avoid common design pitfalls and create a seamless user experience.</p>
+
+                    <p>Ongoing support is a cornerstone of our service. Great design evolves with user feedback and market trends, so we offer follow-up consultations to refine your UX/UI based on analytics and user testing. We provide resources like style guides and design templates to maintain consistency and streamline future updates. Our consultants are also available to train your team on UX/UI principles or collaborate with developers to ensure smooth implementation, keeping your project on track and user-focused.</p>
+
+                    <p>With our UX/UI Design Consultation Service, you gain a trusted partner dedicated to elevating your digital product. Our experienced consultants have helped clients across industries—from startups to established businesses—create designs that boost engagement and conversions. We save you time and resources by delivering user-centric, visually stunning solutions tailored to your needs. Contact us today to schedule your consultation and take the first step toward crafting a digital experience that captivates and retains your users.</p>
+                </div>
+            </div>
+            <div id="onboardingForm">
+            <h2>Request a Consultation</h2>
+            <form action="mailto:gromtharstrongheart@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="learnMore" type="submit">Send Consultation Request</button>
+            </form>
+            <p id="formClose">Close</p>
+        </div>
+        </section>
+    </section>
 </body>
 </html>

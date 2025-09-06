@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Developoment Consulting</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../common.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <!-- Dismissable bar with quick action items -->
+        <div class="quickHelpBar" id="quickHelpBar">
+            <ul>
+                <li><p>Market Impact From [item]</p></li>
+                <li><a href="#documentation">Current Info</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+            </ul>
+            <!-- Closes quickHelpBar -->
+            <button id="newsBumperClose" class="closeMe" aria-label="Close notification">✕</button>
+        </div>
+        <!-- Main Site Navigation -->
+        <nav id="mainNav">
+            <ul id="navList">
+                <li><a href="../index.html"><img id="logo" src="../media/Logo Round.jpg" alt="Better Bittner Business Logo"></a></li>
+                <li><a href="../consulting.html">Consulting</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="lastMultiColumn"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="serviceWriteup">
+        <div id="setItUpButton"><p class="emailFormButton">Set It Up!</p></div>
+        <div class="adSpace"><img src="../media/ad.jpg" alt="Advertisement for McKinnley's Treated Lumber"><a class="learnMore" href="#null">Try McKinnley's!</a><p id="adClose">Dismiss</p></div>
+        <section id="pitchSection" class="mainContent">
+            <h1>Web Development Consulting</h1>
+            <div class="serviceDetails">
+                <div class="detailedServiceDescription">
+                    <p>Our Total IT Security Analysis Consultation Service is designed to provide businesses with a comprehensive evaluation of their cybersecurity posture, ensuring robust protection against evolving digital threats. Whether you're a small business or a large enterprise, our expert consultants deliver tailored insights to identify vulnerabilities and strengthen your IT defenses. We simplify the complexities of security analysis, offering clear, actionable recommendations to safeguard your systems, data, and operations while aligning with your business objectives.</p>
+
+                    <p>We begin with an in-depth assessment of your entire IT environment. Our consultants examine your network infrastructure, applications, endpoints, and security policies to uncover potential weaknesses. Using advanced tools and methodologies, we analyze risks such as malware, unauthorized access, and data breaches, while also reviewing compliance with industry standards like GDPR or HIPAA. This holistic approach ensures a customized security strategy that addresses your specific risks and operational needs.</p>
+
+                    <p>Our consultation process is thorough and transparent, guiding you through the analysis and remediation process. We provide detailed reports on identified vulnerabilities, their potential impact, and prioritized recommendations for mitigation. Our team advises on implementing solutions like firewalls, encryption, and multi-factor authentication, tailored to your budget and infrastructure. We also offer guidance on establishing incident response plans and security protocols to enhance resilience and minimize downtime.</p>
+
+                    <p>Ongoing support is a cornerstone of our service. Cyber threats evolve constantly, so we provide follow-up consultations to monitor your security posture, reassess risks, and refine strategies as needed. We supply resources like risk assessment templates and monitoring tools to help you maintain visibility into your IT environment. Our consultants are available to train your team on interpreting analysis results or collaborating with IT staff, fostering long-term security confidence and independence.</p>
+
+                    <p>With our Total IT Security Analysis Consultation Service, you gain a trusted partner dedicated to fortifying your digital defenses. Our experienced consultants have helped businesses across industries—from finance to manufacturing—mitigate risks and achieve compliance through comprehensive security analyses. We save you time and resources by delivering precise, data-driven insights tailored to your needs. Contact us today to schedule your consultation and take the first step toward a secure, resilient IT environment.</p>
+                </div>
+            </div>
+            <div id="onboardingForm">
+            <h2>Request a Consultation</h2>
+            <form action="mailto:gromtharstrongheart@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="learnMore" type="submit">Send Consultation Request</button>
+            </form>
+            <p id="formClose">Close</p>
+        </div>
+        </section>
+    </section>
 </body>
 </html>

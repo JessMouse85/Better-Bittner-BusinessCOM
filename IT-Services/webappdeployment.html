@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Developoment Consulting</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../common.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <!-- Dismissable bar with quick action items -->
+        <div class="quickHelpBar" id="quickHelpBar">
+            <ul>
+                <li><p>Market Impact From [item]</p></li>
+                <li><a href="#documentation">Current Info</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+            </ul>
+            <!-- Closes quickHelpBar -->
+            <button id="newsBumperClose" class="closeMe" aria-label="Close notification">✕</button>
+        </div>
+        <!-- Main Site Navigation -->
+        <nav id="mainNav">
+            <ul id="navList">
+                <li><a href="../index.html"><img id="logo" src="../media/Logo Round.jpg" alt="Better Bittner Business Logo"></a></li>
+                <li><a href="../consulting.html">Consulting</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="lastMultiColumn"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="serviceWriteup">
+        <div id="setItUpButton"><p class="emailFormButton">Set It Up!</p></div>
+        <div class="adSpace"><img src="../media/ad.jpg" alt="Advertisement for McKinnley's Treated Lumber"><a class="learnMore" href="#null">Try McKinnley's!</a><p id="adClose">Dismiss</p></div>
+        <section id="pitchSection" class="mainContent">
+            <h1>Web Development Consulting</h1>
+            <div class="serviceDetails">
+                <div class="detailedServiceDescription">
+                    <p>Our Web and App Deployment Consultation Service is designed to guide businesses, startups, and entrepreneurs through the critical process of launching websites and mobile applications seamlessly. Whether you're deploying a new digital platform or upgrading an existing one, our expert consultants provide tailored strategies to ensure a smooth, secure, and efficient rollout. We simplify the technical complexities of deployment, empowering you with clear guidance to achieve a successful launch that aligns with your business objectives.</p>
+
+                    <p>We begin with a thorough assessment of your project’s requirements and goals. Our consultants evaluate your web or app architecture, target audience, and operational needs to create a customized deployment plan. We help you choose the right hosting solutions, cloud platforms, or app store requirements, ensuring scalability, performance, and cost-effectiveness. From small business websites to complex mobile apps, we tailor our approach to meet your specific technical and budgetary needs.</p>
+
+                    <p>Our consultation process is hands-on and transparent, covering every phase of deployment. We guide you through critical steps like configuring servers, setting up content delivery networks (CDNs), and optimizing for speed and security. Our team provides insights on best practices for domain management, SSL certificates, and compliance with platform-specific guidelines (e.g., Apple App Store or Google Play). We also troubleshoot potential issues, ensuring your deployment is reliable and minimizes downtime or user disruption.</p>
+
+                    <p>Ongoing support is a key component of our service. Post-launch, we offer follow-up consultations to monitor performance, address bugs, and implement updates or scaling solutions as your user base grows. Our consultants provide tools like monitoring dashboards and analytics to track your platform’s health and user engagement. We also offer training for your team to manage basic maintenance or collaborate effectively with developers, ensuring long-term success and operational independence.</p>
+
+                    <p>With our Web and App Deployment Consultation Service, you gain a trusted partner committed to making your launch a success. Our experienced consultants have helped clients across industries deploy robust, user-friendly websites and apps, from e-commerce platforms to productivity tools. We save you time and reduce risks by delivering a streamlined, secure deployment process. Contact us today to schedule your consultation and take the first step toward launching your digital platform with confidence.</p>
+                </div>
+            </div>
+            <div id="onboardingForm">
+            <h2>Request a Consultation</h2>
+            <form action="mailto:gromtharstrongheart@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="learnMore" type="submit">Send Consultation Request</button>
+            </form>
+            <p id="formClose">Close</p>
+        </div>
+        </section>
+    </section>
 </body>
 </html>

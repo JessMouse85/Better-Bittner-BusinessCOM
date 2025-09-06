@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Developoment Consulting</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../common.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <!-- Dismissable bar with quick action items -->
+        <div class="quickHelpBar" id="quickHelpBar">
+            <ul>
+                <li><p>Market Impact From [item]</p></li>
+                <li><a href="#documentation">Current Info</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+            </ul>
+            <!-- Closes quickHelpBar -->
+            <button id="newsBumperClose" class="closeMe" aria-label="Close notification">✕</button>
+        </div>
+        <!-- Main Site Navigation -->
+        <nav id="mainNav">
+            <ul id="navList">
+                <li><a href="../index.html"><img id="logo" src="../media/Logo Round.jpg" alt="Better Bittner Business Logo"></a></li>
+                <li><a href="../consulting.html">Consulting</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="lastMultiColumn"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="serviceWriteup">
+        <div id="setItUpButton"><p class="emailFormButton">Set It Up!</p></div>
+        <div class="adSpace"><img src="../media/ad.jpg" alt="Advertisement for McKinnley's Treated Lumber"><a class="learnMore" href="#null">Try McKinnley's!</a><p id="adClose">Dismiss</p></div>
+        <section id="pitchSection" class="mainContent">
+            <h1>Web Development Consulting</h1>
+            <div class="serviceDetails">
+                <div class="detailedServiceDescription">
+                    <p>Our Advertisement Market Identification Consultation Service is designed to help businesses pinpoint the most effective markets for their advertising campaigns, maximizing reach and impact. Whether you're launching a new product or expanding your brand’s presence, our expert consultants provide tailored strategies to identify and target high-potential audiences. We simplify the complexities of market analysis, offering clear, actionable guidance to ensure your advertising efforts are focused, cost-efficient, and aligned with your business goals.</p>
+
+                    <p>We begin with a thorough assessment of your business, products, and objectives. Our consultants analyze your current customer base, industry trends, and competitive landscape to identify untapped market opportunities. We use data-driven methods, such as demographic profiling, geographic targeting, and behavioral analysis, to pinpoint audiences most likely to engage with your brand. This ensures your advertising strategy is built on a solid foundation of market insights tailored to your unique needs.</p>
+
+                    <p>Our consultation process is collaborative and strategic, guiding you through the steps of market identification. We provide expert advice on segmenting audiences, selecting the right advertising platforms, and tailoring messaging to resonate with specific market segments. Our team also covers tools like market research surveys, analytics platforms, and customer data analysis to refine your targeting approach. We help you prioritize markets with the highest potential for conversions, ensuring efficient use of your advertising budget.</p>
+
+                    <p>Ongoing support is a cornerstone of our service. Markets evolve, and we offer follow-up consultations to monitor audience trends, assess campaign performance, and adjust your strategy as needed. We provide resources like market tracking dashboards and segmentation templates to help you stay ahead of shifts in consumer behavior. Our consultants are also available to train your team on interpreting market data or collaborating with advertising platforms, fostering long-term confidence in market-driven strategies.</p>
+
+                    <p>With our Advertisement Market Identification Consultation Service, you gain a trusted partner committed to optimizing your advertising success. Our experienced consultants have helped businesses across industries—from e-commerce to professional services—target the right markets and achieve measurable results. We save you time and resources by delivering precise, data-driven market insights tailored to your goals. Contact us today to schedule your consultation and take the first step toward reaching the audiences that matter most to your business.</p>
+            </div>
+            <div id="onboardingForm">
+            <h2>Request a Consultation</h2>
+            <form action="mailto:gromtharstrongheart@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="learnMore" type="submit">Send Consultation Request</button>
+            </form>
+            <p id="formClose">Close</p>
+        </div>
+        </section>
+    </section>
 </body>
 </html>

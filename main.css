@@ -257,15 +257,25 @@
 }
 .adSpace img {
     margin: 0 auto;
-    width: 400px;
+    max-width: 320px;
     height: auto;
 }
-
+#adClose {
+    background: linear-gradient(45deg, pink, white);
+    align-self: center;
+    margin-top: 8px;
+    font-family: sans-serif;
+    position: relative;
+    padding: 12px 16px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
 #setItUpButton {
     position: fixed;
     height: auto;
     width: auto;
-    left: 30%;
+    left: 18.75%;
     padding: 12px 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -283,12 +293,6 @@
     font-size: 2rem;
 }
 
-#onboardingForm {
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .detailedServiceDescription {
     margin: 0 auto;
     background-color: white;
@@ -349,6 +353,10 @@
     background-image: url('./media/code.png');
 }
 
+#pitchSection {
+    margin-left: 6rem;
+}
+
 #onboardingForm{
     position: fixed;
     top: 10%;
@@ -362,6 +370,9 @@
     background-color: white;
     text-align: center;
     color: black;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
 }
 
 #onboardingForm h2 {
@@ -396,9 +407,10 @@
 }
 
 #formClose {
-    background: linear-gradient(45deg, pink, white);
-    align-self: center;
     margin-top: 8px;
+    width: fit-content;
+    background: linear-gradient(45deg, pink, white);
+    justify-self: center;
     font-family: sans-serif;
     position: relative;
     padding: 12px 16px;
@@ -412,18 +424,74 @@
     .servicesGrid li h2{
         font-size: 1.5rem;
     }
+
+    #pitchSection{
+        margin-left: 1rem;
+    }
+
+    #setItUpButton {
+        left: 25%;
+        padding: 8px;
+        font-size: 1.5rem;
+    }
+
+    .emailFormButton {
+        font-size: 1.25rem;
+    }
+
 }
 
 @media (max-width: 1130px){
+    .detailedServiceDescription p {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    #pitchSection h1{
+        font-size: 1.8rem;
+    }
+    #pitchSection {
+        margin-left: 8px;
+    }
+    .adSpace {
+        max-height: 480px;
+        max-width: 360px;
+    }
+
+    .adSpace img {
+        max-width: 240px;
+        height: auto;
+    }
+
+    .emailFormButton {
+        font-size: 1rem;
+    }
+
+    #setItUpButton {
+        left: 25%;
+        padding: 4px;
+        font-size: 1rem;
+    }
+    .adSpace a {
+        max-height: 240px
+    }
+
+    .adSpace .learnMore{
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
     #navList li a {
         font-size: 1.75rem;
     }
+
     #newsTitle {
         font-size: 2rem;
     }
+
     #newsGrid li h2{
         font-size: 1.5rem;
     }
+
     #newsGrid li p{
         font-size: 1.25rem;
     }
@@ -439,6 +507,16 @@
     #navList li a {
         font-size: 1.5rem;
     }
+
+    #setItUpButton {
+        left: 28%;
+        padding: 4px;
+        border: 4px solid black;
+    }
+
+    .emailFormButton {
+        font-size: .85rem;
+    }
 }
 
 @media (max-width: 760px) {
@@ -450,10 +528,15 @@
         grid-template-columns: 1fr 1fr 1fr;
 
     }
-    /* .lastMultiColumn {
-        grid-column: span 2;
-        justify-self: center;
-    } */
+    .adSpace {
+        max-height: 540px;
+        max-width: 360px;
+    }
+
+    .adSpace img {
+        max-width: 180px;
+        height: auto;
+    }
 
     #logo {
         grid-row: span 3;
@@ -482,4 +565,4 @@
     }
 }
 
-/* next break point is 500px */
+/* next break point is 580px */

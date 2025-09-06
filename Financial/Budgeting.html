@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developoment Consulting</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../common.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Dismissable bar with quick action items -->
+        <div class="quickHelpBar" id="quickHelpBar">
+            <ul>
+                <li><p>Market Impact From [item]</p></li>
+                <li><a href="#documentation">Current Info</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+            </ul>
+            <!-- Closes quickHelpBar -->
+            <button id="newsBumperClose" class="closeMe" aria-label="Close notification">✕</button>
+        </div>
+        <!-- Main Site Navigation -->
+        <nav id="mainNav">
+            <ul id="navList">
+                <li><a href="../index.html"><img id="logo" src="../media/Logo Round.jpg" alt="Better Bittner Business Logo"></a></li>
+                <li><a href="../consulting.html">Consulting</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="lastMultiColumn"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="serviceWriteup">
+        <div id="setItUpButton"><p class="emailFormButton">Set It Up!</p></div>
+        <div class="adSpace"><img src="../media/ad.jpg" alt="Advertisement for McKinnley's Treated Lumber"><a class="learnMore" href="#null">Try McKinnley's!</a><p id="adClose">Dismiss</p></div>
+        <section id="pitchSection" class="mainContent">
+            <h1>Web Development Consulting</h1>
+            <div class="serviceDetails">
+                <div class="detailedServiceDescription">
+                    <p>Our Business Budgeting Consultation Service is designed to empower businesses of all sizes with the tools and strategies needed to achieve financial stability and growth. Whether you're a startup seeking to establish a solid financial foundation or an established company aiming to optimize your resources, our expert consultants provide tailored guidance to align your budget with your business goals. We understand that effective budgeting is the backbone of sustainable success, and our service is crafted to simplify complex financial planning, ensuring clarity and confidence in your financial decisions.</p>
+
+                    <p>At the core of our service is a personalized approach to budgeting. We begin with a comprehensive assessment of your business’s financial health, analyzing revenue streams, expenses, and operational costs. Our consultants work closely with you to identify areas of inefficiency, uncover hidden opportunities, and develop a budget that supports both short-term operations and long-term objectives. By leveraging industry best practices and cutting-edge financial tools, we create customized budget plans that are realistic, flexible, and aligned with your unique business model.</p>
+
+                    <p>Our consultation process is collaborative and transparent. We guide you through every step, from setting financial goals to implementing actionable strategies. Our team provides detailed insights into cash flow management, cost control, and profit optimization, helping you make informed decisions. We also offer forecasting models to anticipate future financial needs, enabling proactive adjustments to market changes or unexpected challenges. With our support, you’ll gain a clear understanding of your financial landscape and the confidence to navigate it effectively.</p>
+
+                    <p>What sets our service apart is our commitment to ongoing support. Budgeting isn’t a one-time task; it requires consistent monitoring and refinement. We provide regular check-ins and performance reviews to ensure your budget remains aligned with your evolving business needs. Our consultants are available to answer questions, address concerns, and provide expert advice as your business grows or faces new challenges. Additionally, we offer training for your team to build internal budgeting expertise, fostering long-term financial independence.</p>
+
+                    <p>Choosing our Business Budgeting Consultation Service means investing in your company’s future. Our proven track record demonstrates success across diverse industries, from retail and hospitality to tech and manufacturing. Clients benefit from increased profitability, reduced financial stress, and enhanced strategic planning. Let us help you transform your financial management into a powerful tool for growth. Contact us today to schedule your initial consultation and take the first step toward a stronger, more financially secure business.</p>
+                </div>
+            </div>
+            <div id="onboardingForm">
+            <h2>Request a Consultation</h2>
+            <form action="mailto:gromtharstrongheart@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="learnMore" type="submit">Send Consultation Request</button>
+            </form>
+            <p id="formClose">Close</p>
+        </div>
+        </section>
+    </section>
+</body>
+</html>
